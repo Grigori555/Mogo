@@ -1218,25 +1218,31 @@ text-decoration: none;
 .blogs__item{
     display:flex;
     margin-bottom:30px;
-    align-itmes:center;
+    align-items:center;
 
 }
 .blogs__img{
     width:120px;
     height:80px;
+    
 }
 
 .blogs__content{
     padding-left:20px;
+ 
 }
 
 
 .blogs__title{
-    line-height:1.2;
+    
+    display: block;
+    margin-bottom: 5px;
+    line-height:1.5;
     font-size:12px;
     color:#333;
     text-decoration:none;
     text-transform: uppercase;
+  
 
 }
 
@@ -1252,6 +1258,25 @@ text-decoration:underline;
 
 }
 
+
+/* Instagram*/
+.instagram{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+}
+
+.instagram__item{
+    width:32.33333%;
+    
+    border-bottom:1px solid white;
+
+}
+
+.instagram__item img{
+display:block;
+}
 
 /* Subscribe*/
 
@@ -1316,3 +1341,20 @@ max-width:380px;
     outline: 0;
    border-color:#95e1d3 ;
 }
+
+
+
+/*  Copyright*/
+
+.copyright{
+    border-top:1px solid #e5e5e5;
+    padding:20px 0;
+    text-align: center;
+    font-size:14px;
+    color:#333;
+}
+.copyright  span{
+    color:#f49f9f;
+}
+
+
