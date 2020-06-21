@@ -31,7 +31,8 @@ hr{
 /*container*/
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding:0 15px;
     margin:0 auto;
 }
 
@@ -1357,4 +1358,16 @@ max-width:380px;
     color:#f49f9f;
 }
 
+ @media (max-width:1368px){
+     .intro__title{
+         font-size: 60px;
+     }
+     .intro__inner{
+        font-size: 70px;
+    }
+
+    .intro-suptitle{
+        font-size: 40px;
+    }
+ }
 
