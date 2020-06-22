@@ -80,7 +80,7 @@ margin:60px auto 60px;
 
 }
 
-.intro-suptitle{
+.intro__suptitle{
     font-size:72px;
     color:#fff;
     font-family: "Kaushan Script";
@@ -1358,16 +1358,65 @@ max-width:380px;
     color:#f49f9f;
 }
 
- @media (max-width:1368px){
-     .intro__title{
-         font-size: 60px;
-     }
-     .intro__inner{
-        font-size: 70px;
+@media (max-width:1368px){
+
+    /* Intro*/
+    
+    .intro__suptitle{
+        font-size: 32px;
+    }
+    .intro__title{
+        font-size:95px;
     }
 
-    .intro-suptitle{
-        font-size: 40px;
+
+}
+
+
+@media (max-width:1230px){
+
+    /* Intro*/
+    
+    .intro__suptitle{
+        font-size: 52px;
     }
- }
+    .intro__title{
+        font-size:120px;
+    }
+}
+
+
+@media (max-width:990px){
+
+    /* Intro*/
+    
+    .intro__suptitle{
+        font-size: 32px;
+    }
+    .intro__title{
+        font-size:80px;
+    }
+}
+
+@media (max-width:650px){
+
+    /* Intro*/
+    
+    .intro__suptitle{
+        font-size: 22px;
+    }
+    .intro__title{
+        font-size:40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
