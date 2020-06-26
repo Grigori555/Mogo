@@ -369,15 +369,14 @@ font-size:24px;
 /*Card*/
 
 .card{
-    margin-top: 80px;
+    margin: 80px -15px 0;
     display:flex;
     justify-content: space-between;
 }
 
 .card__item{
-    
- 
-    width:380px;
+    width:33.33333%;
+    padding:0 15px;
 }
 
 .card__inner{
@@ -412,6 +411,8 @@ transition: transform .2s linear;
 }
 .card__img img{
     display:block;
+    max-width:100%;
+    height:auto;
     transition: opasity .1s linear;
 }
 
