@@ -568,6 +568,8 @@ vertical-align: middle;
 .devices__item{
     
     display:block;
+    max-width: 100%;
+    height:auto;
 }
 
 .devices__item--iphone{
@@ -1452,6 +1454,10 @@ max-width:380px;
     padding:40px 0;
 }
 
+.section--devices{
+    padding-bottom:0;
+}
+
    /*Slider*/
    .slider__text{
        display:none
@@ -1547,6 +1553,20 @@ max-width:380px;
 
         .stat__count{
             font-size:52px;
+        }
+
+
+
+        /*Devices*/
+
+        .devices{
+            max-width:320px;
+        }
+
+        .devices__item--iphone{
+            width:180px;
+            bottom:-50px;
+            right:-80px;
         }
 
 
