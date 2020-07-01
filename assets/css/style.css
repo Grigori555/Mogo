@@ -690,6 +690,9 @@ margin-top:5px;
 
 
 .reviews__photo{
+    display:block;
+    width: 210px;
+    height:210px;
     border:2px solid #95e1d3;
     border-radius:50%;
     position: absolute;
@@ -1404,6 +1407,13 @@ max-width:380px;
         font-size:120px;
     }
 
+    /*Review*/
+    .reviews__text{
+        font-size:20px;
+    }
+
+    
+
     
 }
 
@@ -1448,6 +1458,23 @@ max-width:380px;
     .services__item--border{
     border:0;
     }
+
+
+    /*Review*/
+
+    .reviews{
+        padding:0 60px;
+    }
+
+    .reviews__photo{
+        height:150px;
+        width:150px;
+    }
+
+    .reviews__item{
+        padding-left:175px;
+    }
+    
 
 
     
@@ -1524,6 +1551,24 @@ max-width:380px;
        width:100%;
    }
 
+   /*Reviews*/
+
+   .reviews__photo{
+      position:static;
+      margin:0 auto 20px; 
+   }
+   .reviews__item{
+       padding-left:0;
+   }
+
+   .reviews__text{
+       font-size:16px;
+   }
+
+   .reviews__author{
+       font-size:20px;
+   }
+
 
 }
 
@@ -1592,6 +1637,15 @@ max-width:380px;
             right:-80px;
         }
 
+        /*Reviews*/
+
+        .reviews{
+            padding:0;
+        }
+
+        .reviews__btn{
+            top:18%;
+        }
 
 
 }
