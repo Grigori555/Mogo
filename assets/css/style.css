@@ -1396,7 +1396,7 @@ max-width:380px;
     /* Intro*/
     
     .intro__suptitle{
-        font-size: 32px;
+        font-size:32px;
     }
     .intro__title{
         font-size:65px;
@@ -1411,12 +1411,12 @@ max-width:380px;
 
     /* Intro*/
     
-    .intro__suptitle{
+    /* .intro__suptitle{
         font-size: 52px;
     }
     .intro__title{
         font-size:120px;
-    }
+    }   */
 
     /*Review*/
     .reviews__text{
