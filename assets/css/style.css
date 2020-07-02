@@ -950,7 +950,7 @@ background-position:-112px;
 
 }
 .works__image{
-    max-width:100%; /* мое решение*/
+    max-width:100%; /*мое решение */
     height: auto;
     transition:opacity .1s linear;
     display:block;
@@ -1581,7 +1581,15 @@ max-width:380px;
    }
 
 
-   /*Logos*/
+   /*Works*/
+   .works{
+       flex-wrap:wrap;
+   }
+
+   .works__col{
+       flex:none;
+       width:50%;
+   }
    
 
 }
@@ -1637,6 +1645,11 @@ max-width:380px;
             font-size:52px;
         }
 
+        /*works*/
+
+        
+
+
 
 
         /*Devices*/
@@ -1677,6 +1690,14 @@ max-width:380px;
         .logos__img{
             margin:0 auto;
         }
+
+        /*Works*/
+        .works__col{
+            width:100%;
+        }
+
+         
+        
 
 }
 
