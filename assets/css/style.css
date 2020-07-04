@@ -1185,8 +1185,10 @@ text-decoration: none;
 
 .footer__inner{
     display: flex;
-    padding-bottom:65px;
+    flex-wrap:wrap;
     justify-content: space-between;
+    padding-bottom:65px;
+    
 }
 .footer__col--first{
     width:40%;
@@ -1306,7 +1308,7 @@ text-decoration:underline;
 }
 
 .instagram__item{
-    width:32.33333%;
+    width:33%;
     
     border-bottom:1px solid white;
 
@@ -1314,6 +1316,8 @@ text-decoration:underline;
 
 .instagram__item img{
 display:block;
+max-width: 100%;
+height:auto;
 }
 
 /* Subscribe*/
@@ -1506,6 +1510,20 @@ max-width:380px;
     .clients__item:last-child{
         margin-bottom:0;
     }
+
+    /*Footer*/
+    .footer__col--first{
+        width:100%;
+    }
+
+    .footer__col--second,
+    .footer__col--third{
+        width:50%;  
+    }
+
+    /* instagramm    */
+
+    
 
 
     
