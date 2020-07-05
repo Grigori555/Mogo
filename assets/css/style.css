@@ -1464,6 +1464,9 @@ max-width:380px;
 @media (max-width:990px){
 
     /* Intro*/
+
+    
+    
     
     .intro__suptitle{
         font-size: 32px;
@@ -1567,6 +1570,11 @@ max-width:380px;
 /*tablet portreit orientation*/
 @media (max-width:770px){
 
+
+    /*intro*/
+    .intro{
+        min-height:650px;
+    }
     /*Nav*/
    .nav{
        display:none;
@@ -1715,6 +1723,7 @@ max-width:380px;
 @media (max-width:575px){
 
     /* Intro*/
+
     
     .intro__suptitle{
         font-size: 22px;
