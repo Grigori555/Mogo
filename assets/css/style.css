@@ -26,6 +26,11 @@ hr{
 
 }
 
+/*page*/
+.page{
+    overflow: hidden;
+}
+
 
 
 /*container*/
