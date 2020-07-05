@@ -287,7 +287,7 @@ transition: background .1s linear, color .1s linear;
 /* Section*/
 .section{
     padding: 80px 0;
-    overflow: hidden;
+    
 }
 .section--devices{
   background-image: url(../images/devices/devices-bg.jpg);
@@ -567,6 +567,7 @@ vertical-align: middle;
     width: 100%;
     max-width:600px;
     margin:0 auto;
+   
 }
 
 .devices__item{
@@ -1408,15 +1409,22 @@ max-width:380px;
     color:#f49f9f;
 }
 /*for my laptop rule*/
-@media (max-width:1368px){
+@media (max-width:1390px), (min-width:1600px){
 
     /* Intro*/
+    .intro__inner{
+        margin-bottom:70px;
+    }
     
     .intro__suptitle{
-        font-size:32px;
+        font-size:40px;
     }
     .intro__title{
-        font-size:65px;
+        font-size:75px;
+    }
+
+    .intro__title:after{
+        margin: 40px auto;
     }
 
 
@@ -1428,12 +1436,12 @@ max-width:380px;
 
     /* Intro*/
     
-    /* .intro__suptitle{
+    .intro__suptitle{
         font-size: 52px;
     }
     .intro__title{
         font-size:120px;
-    }   */
+    }  
 
     /*Review*/
     .reviews__text{
