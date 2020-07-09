@@ -255,6 +255,7 @@ vertical-align: middle;
 
 .nav-toggle.active .nav-toggle__item{
     background:none;
+    transform:rotate(45deg);
 
 }
 
