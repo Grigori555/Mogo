@@ -249,23 +249,19 @@ vertical-align: middle;
     bottom:0;
     left:0;
     margin:auto;
+    transition:background .2s linear;
+    
     
 
 }
 
 .nav-toggle.active .nav-toggle__item{
     background:none;
-    transform:rotate(45deg);
+    
 
 }
 
-.nav-toggle.active .nav-toggle__item:before{
-    transform:translateY(5px) rotate(90deg);
-}
 
-.nav-toggle.active .nav-toggle__item:after{
-    transform:translateY(-10px);
-}
 
 .nav-toggle__item::before,
 .nav-toggle__item::after{
@@ -276,7 +272,7 @@ vertical-align: middle;
     position: absolute;
     left:0;
     z-index: 1;
-
+    
 }
 
 .nav-toggle__item::before{
@@ -285,6 +281,19 @@ vertical-align: middle;
 
 .nav-toggle__item::after{
     bottom:-8px;
+}
+
+.nav-toggle.active .nav-toggle__item:before{
+    transform-origin:left top;
+    transform: rotate(45deg)
+    translate3d(0, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item:after{
+    transform-origin:left bottom;
+    transform:rotate(-45deg)
+    translate3d(0, 3px, 0);
+    
 }
 
 
