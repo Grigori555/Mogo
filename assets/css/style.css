@@ -145,24 +145,40 @@ color:#fff;
 /*mine*/
 .header__arrow-top{
     display: none;
-    height: 9px;
-    width:14px;
-    color:red;
-    font-weight: bold;
-    position:fixed;
-    top:400px;
-    left:10px;
-    cursor: pointer;
+    vertical-align: top;
+    margin:0 10px;
+    display:inline-block;
+    color:#fff;
+    transition: color .2s linear;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
     
-   
+    
+}
+
+.header__arrow-top:hover{
+    color:#fce38a;
+}
+
+.header__arrow-top:hover:after{
+    content:"";
+    position:absolute;
+    display: block;
+    background-color:#fce38a;
+    width:100%;
+    height:3px;
+    margin-top:12px;
+    z-index: 1;
 
 }
 
-.header__arrow-top:before{
+/* .header__arrow-top:before{
     content:"▲";
     
-}
+} */
 /*/.mine*/
+
 
 /*Nav*/
 
@@ -1687,6 +1703,22 @@ max-width:380px;
     .header{
         padding:10px 0;
         }
+        /*mine*/
+        .header__arrow-top{
+            position:fixed;
+            top: 100px;
+            left: 10px;
+            color:black;
+            border:1px solid orange;
+        }
+
+
+
+        /*/mine*/
+
+
+
+
     /*Nav*/
    .nav{
        display:none;
