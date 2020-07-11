@@ -31,10 +31,18 @@ if(pageYOffset>=820){
     header.classList.remove("fixed");
 
 }
+});
 
+/* nav-toggle active*/
 
-})
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".nav");
+navToggle.addEventListener("click",()=>{
+    navToggle.classList.toggle("active");
+    nav.classList.toggle("active");
+    
 
+});
 
 
 

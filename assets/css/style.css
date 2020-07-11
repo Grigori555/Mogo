@@ -1677,6 +1677,9 @@ max-width:380px;
        background-color: #eb8b8d;
 
    }
+
+
+
    .nav__link{
        display:block;
        margin:0;
@@ -1688,6 +1691,12 @@ max-width:380px;
    .nav__link:after{
        top:70%;
    }
+
+.nav.active{
+    display: block;
+    
+}
+
 /*/mine*/
 
 
