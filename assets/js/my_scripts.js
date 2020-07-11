@@ -1,8 +1,16 @@
 /*Work with native JS*/
 
+/*constants*/
+let accordItem = document.querySelectorAll(".accordion__item");
+const header = document.querySelector(".header");
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".nav");
+const headArrTop = document.querySelector(".header__arrow-top");
+const about = document.getElementById("about");
+
 /* accordion  What we do */
 
-let accordItem = document.querySelectorAll(".accordion__item");
+
 
 
 accordItem.forEach(function(index){
@@ -19,24 +27,26 @@ accordItem.forEach(function(index){
 
 /*Header fixed and active*/
 
-const header = document.querySelector(".header");
 
-window.addEventListener("scroll", function(){
-if(pageYOffset>=820){
-    header.classList.add("active");
-    header.classList.add("fixed");
+openMenu();
+window.addEventListener("scroll", openMenu);
 
-}else if(pageYOffset<820){
-    header.classList.remove("active");
-    header.classList.remove("fixed");
+function openMenu(){
+    if(pageYOffset>=about.offsetTop){
+        header.classList.add("active");
+        header.classList.add("fixed");
+        headArrTop.style.visibility ="visible";
+    
+    }else if(pageYOffset<about.offsetTop){
+        header.classList.remove("active");
+        header.classList.remove("fixed");
+    
+    }
+    }
 
-}
-});
+/* nav-toggle active with 770 or lower size display*/
+/*click*/
 
-/* nav-toggle active*/
-/*click*//*hover*/
-const navToggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav");
 
 
 navToggle.addEventListener("click",()=>{
@@ -47,10 +57,11 @@ navToggle.addEventListener("click",()=>{
 });
 
 /* the button of fast scroll on top*/
-const headArrTop = document.querySelector(".header__arrow-top");
+
 window.addEventListener("scroll",()=>{
     if(pageYOffset>=700){
         headArrTop.style.display = "block";
+        headArrTop.style.visibility ="visible";
     } else{
         headArrTop.style.display = "none";
     }
@@ -58,7 +69,17 @@ window.addEventListener("scroll",()=>{
 
 headArrTop.addEventListener("click",()=>{
     window.scrollTo(pageYOffset,0);
-})
+});
+
+
+
+
+
+
+
+
+
+
 
 
 

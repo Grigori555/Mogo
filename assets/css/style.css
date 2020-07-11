@@ -144,7 +144,8 @@ color:#fff;
 }
 /*mine*/
 .header__arrow-top{
-    display: none;
+    visibility: hidden;
+    display:none;
     vertical-align: top;
     margin:0 10px;
     display:inline-block;
