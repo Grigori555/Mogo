@@ -34,15 +34,33 @@ if(pageYOffset>=820){
 });
 
 /* nav-toggle active*/
-
+/*click*//*hover*/
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
+
+
 navToggle.addEventListener("click",()=>{
     navToggle.classList.toggle("active");
     nav.classList.toggle("active");
     
 
 });
+
+/* the button of fast scroll on top*/
+const headArrTop = document.querySelector(".header__arrow-top");
+window.addEventListener("scroll",()=>{
+    if(pageYOffset>=700){
+        headArrTop.style.display = "block";
+    } else{
+        headArrTop.style.display = "none";
+    }
+});
+
+headArrTop.addEventListener("click",()=>{
+    window.scrollTo(pageYOffset,0);
+})
+
+
 
 
 

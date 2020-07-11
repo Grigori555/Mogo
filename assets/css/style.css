@@ -142,7 +142,27 @@ color:#fff;
 
 
 }
+/*mine*/
+.header__arrow-top{
+    display: none;
+    height: 9px;
+    width:14px;
+    color:red;
+    font-weight: bold;
+    position:fixed;
+    top:400px;
+    left:10px;
+    cursor: pointer;
+    
+   
 
+}
+
+.header__arrow-top:before{
+    content:"▲";
+    
+}
+/*/.mine*/
 
 /*Nav*/
 
