@@ -7,6 +7,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
 const headArrTop = document.querySelector(".header__arrow-top");
 const about = document.getElementById("about");
+const navLinks = document.querySelectorAll(".nav__link");
 
 /* accordion  What we do */
 
@@ -55,7 +56,7 @@ navToggle.addEventListener("click",()=>{
     
 
 });
-
+/*Smooth scroll*/
 /* the button of fast scroll on top*/
 
 window.addEventListener("scroll",()=>{
@@ -66,10 +67,38 @@ window.addEventListener("scroll",()=>{
         headArrTop.style.display = "none";
     }
 });
+const page =document.getElementById("page");
+headArrTop.addEventListener("click",(e)=>{
+    e.preventDefault();
 
-headArrTop.addEventListener("click",()=>{
-    window.scrollTo(pageYOffset,0);
+    page.scrollIntoView({
+        block: "start", 
+        behavior: "smooth"
+    });
 });
+
+
+
+
+/*nav*/
+for(let navLink of navLinks){
+    navLink.addEventListener("click",function(e){
+        e.preventDefault();
+        const id =navLink.getAttribute("href");
+            document.querySelector(id).scrollIntoView({
+                behavior: "smooth",
+                block:"start"
+            });
+    });
+};
+
+
+
+
+
+
+
+
 
 
 
