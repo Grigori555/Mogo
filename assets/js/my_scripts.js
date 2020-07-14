@@ -99,18 +99,13 @@ for(let navLink of navLinks){
 };
 
 // switch links class active
-
-
-const navLinkAbout   = document.getElementById("about__nav");
-
 const array = [];
 
  for(let link of navLinks){
 
   array.push(link);
 
- 
- };
+};
 
 for(let i =0; i<=array.length-3;i++){
     array[i].addEventListener("click",()=>{
