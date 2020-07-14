@@ -1,13 +1,14 @@
 /*Work with native JS*/
 
 /*constants*/
-let accordItem = document.querySelectorAll(".accordion__item");
+const accordItem = document.querySelectorAll(".accordion__item");
 const header = document.querySelector(".header");
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
 const headArrTop = document.querySelector(".header__arrow-top");
 const about = document.getElementById("about");
 const navLinks = document.querySelectorAll(".nav__link");
+const page =document.getElementById("page");
 
 /* accordion  What we do */
 
@@ -67,7 +68,7 @@ window.addEventListener("scroll",()=>{
         headArrTop.style.display = "none";
     }
 });
-const page =document.getElementById("page");
+
 headArrTop.addEventListener("click",(e)=>{
     e.preventDefault();
 
@@ -89,8 +90,43 @@ for(let navLink of navLinks){
                 behavior: "smooth",
                 block:"start"
             });
+
+            
+
+    
     });
+    
 };
+
+// switch links class active
+
+
+const navLinkAbout   = document.getElementById("about__nav");
+
+const array = [];
+
+ for(let link of navLinks){
+
+  array.push(link);
+
+ 
+ };
+
+for(let i =0; i<=array.length-3;i++){
+    array[i].addEventListener("click",()=>{
+        array[i].classList.add("active");
+       for(var j=1+i;j<=array.length-3;j++){
+       array[j].classList.remove("active");
+       }
+       for(var k=i-1;k>=0;k--){
+          array[k].classList.remove("active");
+          }
+    });
+}
+  
+
+
+
 
 
 
