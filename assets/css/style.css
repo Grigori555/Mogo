@@ -1685,6 +1685,10 @@ max-width:380px;
        background-color: #eb8b8d;
 
    }
+
+   .nav.active{
+       display: block;
+   }
    .nav__link{
        display:block;
        margin:0;
