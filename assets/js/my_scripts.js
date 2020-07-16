@@ -5,7 +5,7 @@ const accordItem = document.querySelectorAll(".accordion__item");
 const header = document.querySelector(".header");
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
-const headArrTop = document.querySelector(".header__arrow-top");
+const headArrTop = document.querySelector(".header__logo");
 const about = document.getElementById("about");
 const navLinks = document.querySelectorAll(".nav__link");
 const page =document.getElementById("page");
@@ -58,16 +58,9 @@ navToggle.addEventListener("click",()=>{
 
 });
 /*Smooth scroll*/
-/* the button of fast scroll on top*/
+/* the button of fast scroll on top-logo*/
 
-window.addEventListener("scroll",()=>{
-    if(pageYOffset>=700){
-        headArrTop.style.display = "block";
-        headArrTop.style.visibility ="visible";
-    } else{
-        headArrTop.style.display = "none";
-    }
-});
+
 
 headArrTop.addEventListener("click",(e)=>{
     e.preventDefault();

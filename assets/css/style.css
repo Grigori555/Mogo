@@ -129,9 +129,12 @@ margin:60px auto 60px;
 }
 
 .header__inner{
+    
     display:flex;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
 
@@ -139,6 +142,7 @@ margin:60px auto 60px;
 font-size: 30px;
 font-weight: 700;
 color:#fff;
+cursor: pointer;
 
 
 }
@@ -1729,6 +1733,10 @@ max-width:380px;
        left:0;
        background-color: #eb8b8d;
 
+   }
+
+   .nav.active{
+       display:block;
    }
 
 
