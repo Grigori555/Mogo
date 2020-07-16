@@ -121,6 +121,15 @@ margin:60px auto 60px;
     transform: translate3d(0,0,0);
     box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
     transition: transform 1s linear;
+    height:auto;
+}
+
+.header.fixed.active .nav{
+    margin-top:-25px;
+}
+
+.header.fixed.active .header__logo{
+    margin-top:-25px;
 }
 
 .header.active{
