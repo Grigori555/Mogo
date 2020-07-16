@@ -1709,12 +1709,8 @@ max-width:380px;
         padding:10px 0;
         }
         /*mine*/
-        .header__arrow-top{
-            position:fixed;
-            top: 100px;
-            left: 10px;
-            color:black;
-            border:1px solid orange;
+        .section__header{
+            margin-top:40px;
         }
 
 
@@ -1735,10 +1731,7 @@ max-width:380px;
 
    }
 
-   .nav.active{
-       display:block;
-   }
-
+   
 
 
    .nav__link{

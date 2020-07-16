@@ -102,6 +102,7 @@ const array = [];
 
 for(let i =0; i<=array.length-3;i++){
     array[i].addEventListener("click",()=>{
+        event.preventDefault();
         array[i].classList.add("active");
        for(var j=1+i;j<=array.length-3;j++){
        array[j].classList.remove("active");
@@ -109,8 +110,14 @@ for(let i =0; i<=array.length-3;i++){
        for(var k=i-1;k>=0;k--){
           array[k].classList.remove("active");
           }
+
+        nav.classList.remove("active");
+        navToggle.classList.remove("active");
     });
 }
+
+
+
   
 
 
